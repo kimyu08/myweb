@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* layout2.css */
+body {
+    margin: 0 auto!important;
+    background-color: #e9ecef;
+    max-width: 414px;
+}
+div { 
+  overflow: hidden;
+}
+ul {
+  font-size:0px;
+  min-height: 177px;
+  white-space: nowrap;
+  padding:0px;
+}
+.item {
+  width:100%;
+  overflow: hidden;
+  display: inline-block;  
+  height: 177px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  -webkit-animation: moveSlideshow 5s linear infinite; 
+  -moz-animation: moveSlideshow 5s linear infinite;
+  -o-animation: moveSlideshow 5s linear infinite;
+}
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-200%);  
+  }
+}
